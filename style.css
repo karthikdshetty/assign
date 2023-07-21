@@ -71,7 +71,6 @@ body{
  }
  .header-text h1 {
   padding-bottom: 25px;
-   
 }
  .header-text h1 span{
     color:#f60000;
@@ -293,7 +292,7 @@ nav .fas{
       font-size: 45px;
       text-align: center;
       margin-top: 10px;
-     text-decoration: none;
+      text-decoration: none;
    }
    .logo{
       width: 100px;
@@ -303,7 +302,7 @@ nav .fas{
       font-size: 30px;
       text-align: left;
       margin-bottom: 10px;
-     text-decoration: none;
+      text-decoration: none;
    }
 
 
