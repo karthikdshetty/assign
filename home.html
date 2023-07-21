@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australian Motorcyclist Magazine Store | Australian Motorcyclist Magazine</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/277dd827d4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><img src="images/6.png" class="logo"></div>
+                
+                <ul id="sidemenu">
+                    <li><a href="https://ausmotorcyclist.com.au/">Home</a></li>
+                    <li><a href="https://ausmotorcyclist.com.au/news/">News</a></li>
+                    <li><a href="https://ausmotorcyclist.com.au/category/review/">Reviews</a></li>
+                    <li><a href="https://ausmotorcyclist.com.au/category/guides/">Guide</a></li>
+                    <li><a href="https://ausmotorcyclist.com.au/about-us/">About Us</a></li>
+                    <li><a href="https://ausmotorcyclist.com.au/store/">Subscribe Now</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+      
+            <div class="sticky-container">
+                <ul class="sticky">
+                    <li>
+                        <img src="images/2.png" width="33" height="33">
+                        <p><a href="#" target="_blank">Like Us on<br>Facebook</a></p>
+                    </li>
+                    <li>
+                        <img src="images/3.png" width="33" height="33">
+                        <p><a href="#" target="_blank">Follow Us on<br>Instagram</a></p>
+                    </li>
+                    <li>
+                        <img src="images/4.png" width="33" height="33">
+                        <p><a href="#" target="_blank">Follow Us on<br>Twitter</a></p>
+                    </li>
+                   
+                    <li>
+                        <img src="images/5.png" width="33" height="33">
+                        <p><a href="#" target="_blank">Follow Us on<br>Youtube/a></p>
+                    </li>
+                </ul>
+            </div>
+           
+            <div class="header-text">
+                <p>Australian Motorcyclist Magazine</p>
+                <h1>"Magazines at <span class="multitext">50% off"</span></h1>
+
+                <div class="slideContainer">
+                    <div class="picture">
+                          <img src="images/7.jpg">
+                    </div>
+                    <div class="picture">
+                          <img src="images/8.jpg">
+                        </div>
+                    <div class="picture">
+                          <img src="images/9.jpg">
+                    </div>
+                    
+                    <div class="arrow">
+                          <a class="previous" onclick="slideMove(-1)">&#10094;</a>
+                          <a class="next" onclick="slideMove(1)">&#10095; </a>
+                    </div>
+                    <div>
+                        <a href="#contact" class="btn2"> Subscribe</a>
+                    </div>
+                
+                </div>
+        </div>
+    </div>
+
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+    </script>
+
+    <script>
+        var slideIndex = 1;
+slideShow(slideIndex);
+
+function slideMove(n) {
+  slideShow(slideIndex += n);
+}
+
+function slideShow(n) {
+  var i;
+  var slide= document.getElementsByClassName("picture");
+  
+  if (n > slide.length) {
+    slideIndex = 1;
+  }
+
+  if(n < 1) {
+    slideIndex = slide.length;
+  } 
+
+  for(i = 0; i < slide.length; i++) {
+    slide[i].style.display = "none";
+  }
+
+  slide[slideIndex-1].style.display = "block";
+}
+    </script>
+</body>
+</html>
