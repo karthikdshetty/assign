@@ -84,11 +84,11 @@ body{
  }
  
  @keyframes color-change {
-   0% { color: rgb(216, 216, 216); }
-   50% { color: #d09393; }
-   100% { color: #c15353; }
-   50% { color: #d09393; }
-   0% { color: rgb(118, 118, 118); }
+   0% { color: rgb(255, 0, 0); }
+   50% { color: #ff4444; }
+   100% { color: #ff9393; }
+   50% { color: #ffd5d5; }
+   0% { color: rgb(255, 200, 0); }
   
    
  }
@@ -144,9 +144,9 @@ body{
    text-decoration:underline;
 }
 
-/* mag cover*/
 
 
+/*button*/
 
 .btn2{
    display: block;
@@ -167,6 +167,8 @@ body{
    background: #ff0000;
    
 }
+
+/*slideshow*/
 
 .slideContainer {
    position: relative;
